@@ -1,0 +1,94 @@
+.page{
+    background-color: hsl(185, 75%, 39%);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+}
+.main{
+    position: absolute;
+    top: 25%;
+    right: 25%;
+    left: 25%;
+    bottom: 25%;
+    /*Card color background*/
+    background-color: white;
+    background-image: url('./images/bg-pattern-card.svg');
+    background-position: top;
+    background-size: 50%;
+    background-repeat: repeat-x;
+    /*Card container*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 35%;
+    margin: auto;
+    border-radius: 15px;
+}
+.profile{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.profile__image{
+    border-radius: 100%;
+    width: 25%;
+    align-self: center;
+}
+.profile__info{
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+}
+.age{
+    font-weight: 400;
+}
+.location{
+    text-align: center;
+}
+.details{
+    border-top: 1px solid hsl(0, 0%, 59%) ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.numbers{
+    font-weight: 700;
+    font-size: 18px;
+}
+.circle__top{
+    background-image: url('./images/bg-pattern-top.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: -100px -100px;
+    height: 50vh;    
+
+}
+.circle__bottom{
+    background-image: url('./images/bg-pattern-top.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 800px;
+    min-height: 300px;
+    height: 50vh;
+}
+.attribution { 
+    font-size: 11px; text-align: center; }
+.attribution a { 
+    color: hsl(228, 45%, 44%); }
+    @media screen and (max-width: 750px){
+        .main{
+            width: 80%;
+            left: 5%;
+            right: 5%;
+            background-size: 90%;
+        }
+        .circle__top{
+            background-position: -60px -60px;
+        }
+        .circle__bottom{
+            background-position: 200px;
+        }
+    }
